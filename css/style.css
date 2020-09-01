@@ -537,6 +537,7 @@ header {
     font-weight: var(--font-weight-bold);
     padding: 16px 32px;
     background: var(--color-light);
+    z-index: 2;
 }
 
 /* footer */
