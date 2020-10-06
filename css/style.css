@@ -17,7 +17,8 @@
 
     --font-size-h1: 3rem;
     --font-size-h2: 2.25rem;
-    --font-size-h3: 1.25rem;
+    --font-size-h3: 1.75rem;
+    --font-size-h4: 1.25rem;
     --font-size-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
@@ -89,6 +90,9 @@ h2 {
 h3 {
     font-size: var(--font-size-h3);
 }
+h4 {
+    font-size: var(--font-size-h4);
+}
 
 .section__title {
     margin-bottom: 0.25em;
@@ -141,7 +145,7 @@ h3 {
 
 .section__subtitle {
     margin: 0;
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
 }
 
 .section__subtitle--intro,
@@ -150,6 +154,14 @@ h3 {
     padding: 0.25em 1em;
     font-family: var(--font-family-secondary);
     margin-bottom: 1em;
+}
+
+.section__subtitle--edu,
+.section__subtitle--exp {
+    background: var(--color-accent);
+    padding: 0.25em 1em;
+    font-family: var(--font-family-secondary);
+    margin: 0;
 }
 
 /* header */
@@ -180,7 +192,7 @@ header {
 .nav__link {
     color: inherit;
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
     text-decoration: none;
     padding-left: 1.2em;
     padding-right: 1.2em;
@@ -322,7 +334,7 @@ header {
 
 .serv__list {
     text-align: left;
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
 }
 
 @media (max-width: 800px) {
@@ -453,7 +465,16 @@ header {
 }
 
 .about-me__body {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
+}
+
+.about-me__body p {
+    margin: 10px 0;
+}
+
+.about-me__body ul,
+.about-me__body li {
+    margin: 0;
 }
 
 .about-me__img {
@@ -483,7 +504,7 @@ header {
 }
 
 .section__subtitle--work {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
 }
 
 .portfolio {
@@ -524,7 +545,7 @@ header {
 
 .link__text {
     color: var(--color-accent);
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
     font-weight: var(--font-weight-bold);
     padding: 16px 32px;
     background: var(--color-light);
@@ -547,7 +568,7 @@ header {
 }
 
 .footer__link {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
     font-weight: var(--font-weight-bold);
 }
 
