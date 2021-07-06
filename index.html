@@ -1,341 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>DevYoung Portfolio Website</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-            integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-            crossorigin="anonymous"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- FONT -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-            rel="stylesheet"
-        />
+    <!--   CSS   -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-        <header>
-            <div class="header">
-                <div class="logo site-logo">
-                    <!-- <div class="logo"> -->
-                    <a href="index.html" class="logo__link">
-                        <!-- <img src="img/logo_xs.jpeg" alt="" /> -->
-                        <span class="logo-text">YC</span>
-                    </a>
-                </div>
-                <div class="social">
-                    <!-- Social List -->
-                    <ul class="social-list">
-                        <li class="social-list__item">
-                            <a
-                                class="social-list__link"
-                                href="https://github.com/youngmin-chung"
-                                ><i
-                                    class="fab fa-github fa-2x"
-                                    style="color: #00c2cb"
-                                ></i>
-                            </a>
-                        </li>
+    <!--   FONT AWESOME ICONS   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <!--   BOX ICONS   -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-                        <li class="social-list__item">
-                            <a
-                                class="social-list__link"
-                                href="https://www.linkedin.com/in/youngminchung/"
-                                ><i
-                                    class="fab fa-linkedin fa-2x"
-                                    style="color: #00c2cb"
-                                ></i>
-                            </a>
-                        </li>
+    <title>DevYoung mywork Website</title>
+  </head>
+  <body>
+    <!--  HEADER  -->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div class="logo site-logo">
+          <class class="logo">
+            <a href="index.html" class="logo__link">
+              <span class="logo-text">YC</span>
+            </a>
+          </class>
+        </div>
 
-                        <!-- <li class="social-list__item">
-                            <a
-                                class="social-list__link"
-                                href="https://php-mysql-myblog.herokuapp.com//index.php"
-                                ><i
-                                    class="fab fa-blogger fa-2x"
-                                    style="color: #00c2cb"
-                                ></i>
-                            </a>
-                        </li> -->
-                    
-                    </ul>
-                </div>
-            </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#mywork" class="nav__link">My works</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#experiences" class="nav__link">Experiences</a>
-                    </li>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
 
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About me</a>
-                    </li>
+    <main class="l-main">
+      <!--  HOME  -->
+      <section class="home" id="home">
+        <div class="home__container bd-grid">
+          <h1 class="home__title"><span>DEV</span><br />YOUNG.</h1>
 
-                    <li class="nav__item">
-                        <a href="#work" class="nav__link">My Works</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-link"
+              ><i class="bx bx-up-arrow-alt"></i>Scroll down</a
+            >
+          </div>
+        </div>
+      </section>
 
-        <!-- Intro -->
-        <h1 class="section__title section__title--intro">
-            Hi, I am
-            <strong
+      <!--  ABOUT  -->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="img/ym_2.jpeg" alt="" />
+          </div>
+
+          <div>
+            <h2 class="section__title section__title--intro">
+              I am
+              <strong
                 ><span class="typed-text"></span
                 ><span class="cursor">&nbsp;</span></strong
-            >
-        </h1>
-        <section class="intro" id="home">
-            <p class="section__subtitle section__subtitle--intro">
-                software developer
-            </p>
-        </section>
-
-        <!-- My experiences -->
-        <section class="my-experiences" id="experiences">
-            <h2 class="section__title section__title--experiences">
-                What I learn and do
+              >
             </h2>
-            <div class="experiences">
-                <div class="service">
-                    <h3>Frontend</h3>
-
-                    <ul class="sub__services">
-                        <li class="serv__list">HTML/CSS</li>
-                        <li class="serv__list">Javascript(ES6+)</li>
-                        <li class="serv__list">React.js/Redux</li>
-                        <li class="serv__list">Angular</li>
-         
-                    </ul>
-                </div>
-                <div class="service">
-                    <h3>Backend</h3>
-                    <ul class="sub__services">
-                        <li class="serv__list">C#, Java, Python, PHP</li>
-                        <li class="serv__list">MySQL, T-SQL, MongoDB</li>
-                        <li class="serv__list">REST, APIs</li>
-                        <li class="serv__list">Spring, ASP.NET, Node</li>
-                    </ul>
-                </div>
-                <div class="service">
-                    <h3>Areas of Interest</h3>
-                    <ul class="sub__services">
-                        <li class="serv__list">UI/UX</li>
-                        <li class="serv__list">Data Structure / Algorithm</li>
-                        <li class="serv__list">Software Design Pattern</li>
-                    </ul>
-                </div>
-            </div>
-            <a href="#work" class="btn">My Work</a>
-        </section>
-
-        <!-- About me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__title section__subtitle--about">
-                New Grad - Actively Looking for an opportunity as software developer
-            </p>
-
-            <div class="about-me__body">
-                <p>
-                    I am a passionate software developer with an interest in full stack development, <strong>problem solving, and business applications</strong>. In college, I specialized in topics such as <strong>data structures and algorithms, and object-oriented design and analysis</strong>, where I applied these concepts using programming languages like <strong>C#, Java, JavaScript, and Python</strong>. Some technical concepts I have explored are REST APIs, databases like SQL, and cloud services, and some tools I have used include Azure, Docker and SSMS. My current goal is to work with a team of professional software developers where I can showcase my skills and build innovative applications. 
-                </p>
-                <h4 class="section__subtitle--edu">Education</h4>
-                <p>
-                    <strong
-                        >Computer Programmer Analyst, Advanced Diploma |
-                        Fanshawe College, London, Ontario &emsp;(Sept. 2017 –
-                        Dec. 2020)</strong
-                    >
-                </p>
-                <ul>
-                    <li>
-                        Full stack development (Front-End: React, Angular /
-                        Back-End: C# (.NET), Spring framework with Java)
-                    </li>
-                    <li>
-                        Delivering web application projects with team members
-                        using Agile/Scrum model
-                    </li>
-                    <li>
-                        Cumulative GPA: 3.97/4.2; Dean’s Honour Roll in 4th, 5th
-                        and 6th semesters
-                    </li>
-                </ul>
-                
-                <h4 class="section__subtitle--exp">Experience</h4>
-                <p>
-                    <strong
-                        >Software Developer Co-op | CanPost Media, London, ON
-                        &emsp;(Sept. 2019 – Dec. 2019)</strong
-                    >
-                </p>
-                <ul>
-                    <li>
-                        Worked directly with the executive on daily operations
-                        of building web application for a buy and sell
-                        e-commerce.
-                    </li>
-                    <li>
-                        Experience on ASP.NET core 2.2 with MVC Web Services and
-                        publishing to Azure.
-                    </li>
-                    <li>
-                        Self-motivated, able to set effective priorities to
-                        achieve immediate and Long-term goals and meet
-                        operational deadlines.
-                    </li>
-                </ul>
-                <p>
-                    <strong
-                        >Manager of Contract Administration / Sungdong
-                        Shipbuilding Company, S.Korea &emsp;(2010 –
-                        2016)</strong
-                    >
-                </p>
-                <ul>
-                    <li>
-                        Developed excellent communication skills through six
-                        years of front-line experience in the shipping industry,
-                        delivering exceptional coordinated service to meet
-                        customers’ needs
-                    </li>
-                    <li>
-                        Oversaw ten projects and successfully delivered twelve
-                        vessels amounting to $49 million each.
-                    </li>
-                </ul>
-                <p>
-                    <strong
-                        >Republic of Korea Army, S.Korea &emsp;(2003 –
-                        2005)</strong
-                    >
-                </p>
-                <ul>
-                    <li>
-                        Assisted drill forces staff to achieve operations goals and train internees
-                    </li>
-                    <li>
-                        Developed communication skills writing comprehensive reports detailing observations during shifts
-                    </li>
-                </ul>
-                <h4 class="section__subtitle--val">Volunteer & Leadership Experience</h4>
-                <p>
-                    <strong
-                        >Diversity and Inclusion Officer of The London Beardsmen (Fanshawe College Club)</strong
-                    >
-                </p>
-                <ul>
-                    <li>
-                        Championed diversity and provided a voice for different groups at Fanshawe
-                    </li>
-                    <li>
-                        Raised awareness of student poverty issues through Beardsmenship
-                    </li>
-                    <li>
-                        Hosted successful food drive for the Sharing Shoppe at Fanshawe College
-                    </li>
-                    <li>
-                        Recruited Fanshawe College students and professors
-                    </li>
-                </ul>
-                
-            </div>
-            <img class="about-me__img" />
-            
-        </section>
-
-        <!-- My Works -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Works</h2>
-            <p class="section__subtitle--work">
-                A collection of some project I've done
-            </p>
-
-            <div class="portfolio">
-                <a href="" class="portfolio__item">
-                    <img
-                        src="img/py_screenshot_01.jpeg"
-                        class="portfolio__img"
-                        alt="https://github.com/youngmin-chung/py_GUI_create_screenshot"
-                        title="Image merger by python"
-                        id="myPrevImg_01"
-                        onClick="reply_click(this.id)"
-                    />
-                </a>
-
-                <a href="" class="portfolio__item">
-                    <img
-                        src="img/covid_tracker.jpeg"
-                        class="portfolio__img"
-                        alt="http://youngminchung.com/COVID-19/"
-                        title=""
-                        id="myPrevImg_02"
-                        onClick="reply_click(this.id)"
-                    />
-                </a>
-
-                <a href="" class="portfolio__item">
-                    <img
-                        src="img/Unipark_Capture.jpeg"
-                        class="portfolio__img"
-                        alt=" https://youtu.be/AB_3jV6f98w"
-                        id="myPrevImg_03"
-                        title=""
-                        onClick="reply_click(this.id)"
-                    />
-                </a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <i class="fas fa-envelope"></i>&nbsp; <a href="mailto:dev.youngmin@gmail.com" class="footer__link"
-                >dev.youngmin@gmail.com</a
+            <span class="about__profession"
+              >Actively Looking for an opportunity as
+              <strong>software developer</strong></span
             >
-            <br>
+            <p class="about__text">
+              I am a passionate software developer with an interest in full
+              stack development,
+              <strong>problem solving, and business applications</strong>. In
+              college, I specialized in topics such as
+              <strong
+                >data structures and algorithms, and object-oriented design and
+                analysis</strong
+              >, where I applied these concepts using programming languages like
+              <strong>C#, Java, JavaScript, and Python</strong>. Some technical
+              concepts I have explored are REST APIs, databases like SQL, and
+              cloud services, and some tools I have used include Azure, Docker
+              and SSMS. My current goal is to work with a team of professional
+              software developers where I can showcase my skills and build
+              innovative applications.
+            </p>
 
+            <div class="about__social">
+              <a
+                class="about__social-icon"
+                href="https://github.com/youngmin-chung"
+                ><i class="fab fa-github fa-2x" style="color: #00c2cb"></i>
+              </a>
+              <a
+                class="about__social-icon"
+                href="https://www.linkedin.com/in/youngminchung/"
+                ><i class="fab fa-linkedin fa-2x" style="color: #00c2cb"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!--  SKILLS  -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
 
-            <p>Copyright &copy; 2020 Youngmin Chung</p>
+        <div class="skills__container bd-grid">
+          <div class="skills__box">
+            <h3 class="skills__subtitle">FRONTEND</h3>
+            <span class="skills__name">HTML/CSS</span>
+            <span class="skills__name">Javascript(ES6+)</span>
+            <span class="skills__name">React/Redux</span>
+            <span class="skills__name">Angular</span>
+          </div>
+          <div class="skills__box">
+            <h3 class="skills__subtitle">BACKEND</h3>
+            <span class="skills__name">C#, Java, Python, PHP</span>
+            <span class="skills__name">MySQL, T-SQL, MongoDB</span>
+            <span class="skills__name">Javascript</span>
+            <span class="skills__name">REST APIs</span>
+            <span class="skills__name">Spring, ASP.NET, Node.js</span>
+          </div>
+          <div class="skills__box">
+            <h3 class="skills__subtitle">Areas of Interest</h3>
+            <span class="skills__name">UI/UX</span>
+            <span class="skills__name">Data Structure / Algorithm</span>
+            <span class="skills__name">Design Pattern</span>
+          </div>
+          <div class="skills__box">
+            <h3 class="skills__subtitle">Tools</h3>
+            <span class="skills__name">Git / Bash</span>
+            <span class="skills__name">Microsoft Azure</span>
+            <span class="skills__name">Postman</span>
+          </div>
+        </div>
+      </section>
 
-            <a href="" id="to-top">
-                <i class="fa fa-chevron-up" aria-hidden="true"></i
-            ></a>
-        </footer>
+      <!--  mywork  -->
+      <section class="mywork section" id="mywork">
+        <h2 class="section-title">My Works</h2>
 
-        <script src="js/index.js"></script>
+        <div class="mywork__container bd-grid">
+          <div class="mywork__img">
+            <img src="img/ChatAppCapture.PNG" alt="" />
 
-        <script>
-            function reply_click(clicked_id) {
-                var img = document.getElementById(clicked_id).src;
-                var url = document.getElementById(clicked_id).alt;
-                var title = document.getElementById(clicked_id).title;
-                localStorage.setItem("portfolio_image_url", img);
-                localStorage.setItem("portfolio__url", url);
-                localStorage.setItem("portfolio_title", title);
+            <div class="mywork__link">
+              <a
+                href="https://github.com/youngmin-chung/React_Chat_App"
+                class="mywork__link-name"
+                >View details</a
+              >
+            </div>
+          </div>
+          <div class="mywork__img">
+            <img src="img/covid_tracker.jpeg" alt="" />
 
-                window.open(url);
-            }
-        </script>
-    </body>
+            <div class="mywork__link">
+              <a
+                href="http://youngminchung.com/COVID-19/"
+                class="mywork__link-name"
+                >View details</a
+              >
+            </div>
+          </div>
+          <div class="mywork__img">
+            <img src="img/py_screenshot_01.jpeg" alt="" />
+
+            <div class="mywork__link">
+              <a
+                href="https://github.com/youngmin-chung/py_GUI_create_screenshot"
+                class="mywork__link-name"
+                >View details</a
+              >
+            </div>
+          </div>
+          <div class="mywork__img">
+            <img src="img/Unipark_Capture.jpeg" alt="" />
+
+            <div class="mywork__link">
+              <a href="https://youtu.be/AB_3jV6f98w" class="mywork__link-name"
+                >View details</a
+              >
+            </div>
+          </div>
+          <div class="mywork__img">
+            <img src="img/mywork_img_06.jpeg" alt="" />
+
+            <div class="mywork__link">
+              <a href="#" class="mywork__link-name"
+                >Landing Page for volunteering platform <br />
+                From Scratch...</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  CONTACT  -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <div class="contact__info">
+            <h3 class="contact__subtitle">EMAIL</h3>
+            <span class="contact__text">
+              <i class="fas fa-envelope"></i>&nbsp;dev.youngmin@gmail.com</span
+            >
+          </div>
+          <div class="contact__info">
+            <h3 class="contact__subtitle">ADDRESS</h3>
+            <span class="contact__text">London, ON</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  FOOTER  -->
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
+        <div class="footer__data">
+          <h2 class="footer__title">Youngmin Chung</h2>
+          <p class="footer__text">
+            I'm Youngmin Chung and welcome to my personal website
+          </p>
+        </div>
+
+        <div class="footer__data"></div>
+
+        <div class="footer__data">
+          <h2 class="footer__title">FOLLOW</h2>
+          <a
+            href="https://www.linkedin.com/in/youngminchung/"
+            class="footer__social"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+
+          <a href="https://github.com/youngmin-chung" class="footer__social"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!--  SCROLL REVEAL  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--  MAIN JS  -->
+    <script src="js/index.js"></script>
+  </body>
 </html>
