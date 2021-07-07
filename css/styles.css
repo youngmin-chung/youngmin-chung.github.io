@@ -500,7 +500,7 @@ section {
     padding-top: 4rem;
   }
   .section-title {
-    /* margin-bottom: 3rem; */
+    margin: 0 3rem;
   }
   .section-title::after {
     width: 64px;
