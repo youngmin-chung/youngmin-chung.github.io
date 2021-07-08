@@ -486,9 +486,18 @@ section {
 
 /* MEDIA VARIABLES */
 /* Responsive */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .home__img {
     width: 230px;
+  }
+  /* .home__title {
+    font-size: var(--font-size-h2);
+  } */
+  :root {
+    --font-size-h1: 3.75rem;
+    --font-size-h2: 2rem;
+    --font-size-body: 1rem;
+    --font-size-small: 0.875rem;
   }
 }
 
