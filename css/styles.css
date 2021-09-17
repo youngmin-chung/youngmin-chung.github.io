@@ -598,7 +598,7 @@ section {
 /* For tall screens on mobiles */
 @media screen and (min-height: 721px) {
   .home__container {
-    height: 640px;
+    height: 200px;
   }
   .home__img {
     width: 500px;
