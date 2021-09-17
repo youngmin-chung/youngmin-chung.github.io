@@ -16,7 +16,8 @@
   --font-weight-bold: 900;
 
   --font-size-h1: 6.25rem;
-  --font-size-h2: 1.25rem;
+  --font-size-h2: 4.25rem;
+  --font-size-h3: 1.25rem;
   --font-size-body: 1rem;
   --font-size-small: 0.813rem;
 
@@ -27,7 +28,8 @@
 @media screen and (min-width: 768px) {
   :root {
     --font-size-h1: 10.5rem;
-    --font-size-h2: 2rem;
+    --font-size-h2: 6.25rem;
+    --font-size-h3: 2rem;
     --font-size-body: 1rem;
     --font-size-small: 0.875rem;
   }
@@ -162,7 +164,7 @@ section {
 
 .section__title {
   position: relative;
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-h3);
   color: var(--dark-color);
   margin: var(--mb-1) 0;
   text-align: center;
@@ -269,7 +271,7 @@ section {
 }
 .home__title {
   align-self: flex-end;
-  font-size: var(--font-size-h1);
+  font-size: var(--font-size-h2);
   color: var(--light-color);
   line-height: 0.8;
 }
@@ -313,7 +315,7 @@ section {
   width: 100px;
 }
 .about__subtitle {
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-h3);
   color: var(--primary-color);
   margin-bottom: var(--mb-1);
 }
@@ -491,11 +493,11 @@ section {
     width: 230px;
   }
   /* .home__title {
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h3);
   } */
   :root {
     --font-size-h1: 3.75rem;
-    --font-size-h2: 2rem;
+    --font-size-h3: 2rem;
     --font-size-body: 1rem;
     --font-size-small: 0.875rem;
   }
@@ -598,16 +600,10 @@ section {
 /* For tall screens on mobiles */
 @media screen and (min-height: 721px) {
   .home__container {
-    height: 200px;
+    height: 50vh;
   }
   .home__img {
     width: 500px;
     right: 24%;
   }
 }
-
-/* .details {
-  justify-items: center;
-  align-items: center;
-  text-align: initial;
-} */
